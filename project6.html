@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!-- AWS IAM automated user account creation -->
+<html>
+	<head>
+		<title>Automation of AWS IAM user account creation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style6">
+						<a href="index.html" class="logo"><strong>TOM</strong> <span>THE DEVELOPER</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+
+					<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="skills and certifications.html">Skills and Certifications</a></li>
+							<!--li><a href="research and development.html">Research and Development</a></li-->
+							<li><a href="socials.html">Socials</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style6">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic02.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>AWS IAM automated user account creation</h1>
+							</header>
+							<div class="content">
+								<p> Automated user creation and management of AWS Identity and Access Management (IAM) resources. </br>
+									AWS | AWS IAM | Shell Script | AWS CLI | GitBash </p>
+							</div>
+							</br>
+							<div>
+								<ul class="actions" style="float:right;">
+									<li><a href="https://github.com/tomedisonc0785563/TomEdisonTheDeveloper/tree/main/Automated%20IAM%20user%20creation" class="button">View in GitHub</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+                        <section class="spotlights">
+                            <a href="#" class="image">
+                                <img src="images/project6/Thumbnail.png" alt="" width="100%" height="100%" style="padding: 0px 0px 10px 0px;" data-position="center center" />
+                            </a>
+                            <div class="inner">
+
+                            </div>
+                        </section>
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Problem Statement</h2>
+									</header>
+									<p>
+										In this project based on a real-world scenario, I acted as Cloud Specialist with the mission to migrate users in an automated way and manage AWS IAM (Identity and Access Management) resources.
+
+                                        There were 100 users that needed to be migrated and have MFA (Multi-factor authentication) enabled on their accounts, as this is a security best practice.
+                                        
+										</br>
+										<b>My Mission:</b> To avoid repetitive and manual tasks in the AWS console, I needed to think about automating the processes.
+										
+									</p>
+								</div>
+							</section>
+
+							<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<div class="content">
+										<div class="inner">
+
+											<header class="major">
+												<h3>Introduction</h3>
+											</header>
+
+											<p>
+                                                AWS Identity and Access Management (IAM) is a web service that helps you securely control access to AWS resources. 
+                                                You use IAM to control who is authenticated (signed in) and authorized (has permissions) to use resources.
+											</br>Overall, AWS Identity and Access Management (IAM) is a foundational service that enables you to manage access to AWS services and resources securely. 
+                                                 With IAM, you can create and manage users, groups, and roles, control permissions to allow or deny access to resources, and integrate with other AWS services for enhanced security and governance.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>	
+						<!-- Three -->
+							<section id="three" class="spotlights">
+								<section>
+									<a href="#" class="image">
+										<img src="images/project6/Solution Architecture part 1.png" alt="" style="padding: 15px 20px 10px 20px;"  data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Solution Architecture</h3>
+                                            </header>
+											<p>
+                                                Shell script used to extract IAM user details from csv file and add user to corresponding predefined user groups in IAM.
+                                                Then enforced MFA policy for all users using custom policy attaching to all the user groups. 
+                                                Also, attached corresponding policies according to the user groups and additional change password policy for initial signup.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>	
+
+						<!-- Four -->
+							<section id="four" style="padding: 15px 20px 10px 20px;">
+								
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Step by step</h3>
+											</header>
+											<h4>Create and setup resources</h4>
+											<p>
+												<img src="images/project6/Company users details.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Get the user details from company HR.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+											<p>
+												<img src="images/project6/Modified user data sample.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Modify the user data to create csv file with only necessary details like username, group name and password. 
+                                                Then upload file to AWS Cloudshell. 
+                                                Also, create all the corresponding user grouos and attach necessary policies to it.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+											
+											<p>
+												<img src="images/project6/Script to create IAM users.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Create shell script to read user details in file one by one and assign corresponding user details(username, group name and password) to create user, set login proffile password and add user to group.
+												After uploading this file to AWS cloudshell modify file type to executable mode.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+                                            
+                                            <h4>Output</h4>
+											<p>
+												<img src="images/project6/AWS output.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Run the bash file to create users.
+
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+											
+											<p>
+												<img src="images/project6/Output.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Now we can see the user getting created in AWS management console.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+											<p>
+												<img src="images/project6/MFA policy attached to groups.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Attach custom MFA policy to all user groups to enforce all users to create MFA first to access other services in AWS.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project6/part 2 IAM user MFA.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												This is after setting up virtual MFA using google authenticator and login again to get access to all resources and services.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+										</div>
+									</div>
+							</section>
+
+						<!-- Five -->
+							<section id="five">
+								<div class="inner">
+									<header class="major">
+										<h2>References</h2>
+									</header>
+									<ul  style="list-style-type:disc;">
+										<li>AWS IAM Documentation: <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console" class="alt style2">https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html?icmpid=docs_iam_console</a></li>
+										<li>AWS MFA policy Documentation: <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_iam_mfa-selfmanage.html" class="alt style2">https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_iam_mfa-selfmanage.html</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/tomedisonc0785563/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/tom-edison-081502208/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; TOM</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
