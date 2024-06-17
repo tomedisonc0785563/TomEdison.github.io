@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<!--Autoscalable web application deployment-->
+<html>
+	<head>
+		<title>Autoscalable web application deployment</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style6">
+						<a href="index.html" class="logo"><strong>TOM</strong> <span>THE DEVELOPER</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+
+					<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="skills and certifications.html">Skills and Certifications</a></li>
+							<!--li><a href="research and development.html">Research and Development</a></li-->
+							<li><a href="socials.html">Socials</a></li>
+						</ul>
+						<!--
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+						-->
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style6">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic0.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Autoscalable web application deployment</h1>
+							</header>
+							<div class="content">
+								<p>Scalable web application based on cpu utilization using Amazon Elastic Beanstalk, DynamoDB and Edge Locations</br>
+								<p>AWS VPC | AWS Elastic Beanstalk | Amazon EC2 | CloudFront | Elastic Load Balancer | Auto Scaling Group | DynamoDB </p>
+							</div>
+							</br>
+							<div>
+								<ul class="actions" style="float:right;">
+									<li><a href="https://github.com/tomedisonc0785563/TomEdisonTheDeveloper/tree/main/Deployment%20of%20autoscalable%20web%20application" class="button">View in GitHub</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+						<section class="spotlights">
+                            <a href="#" class="image">
+                                <img src="images/project8/Thumbnail.png" alt="" width="100%" height="100%" style="padding: 0px 0px 10px 0px;" data-position="center center" />
+                            </a>
+                            <div class="inner">
+
+                            </div>
+                        </section>
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Problem Statement</h2>
+									</header>
+									<p>
+										
+										</br>
+										<b>My Mission:</b> The mission of my project is to implement scalability in the cloud for a web application that needs high availability as well. </br>
+										acted as the Cloud Solution Architect responsible for implementing a web application that needed support for the high demand of a large number of users accessing it simultaneously. This application has been used in large conferences that had more than 10,000 people, in-person and online, with participants from all over the world.
+									</p>
+								</div>
+							</section>
+
+							<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<div class="content">
+										<div class="inner">
+
+											<header class="major">
+												<h2>Introduction</h2>
+											</header>
+											<p>
+												This project focuses on implementing a robust, scalable web application using advanced AWS technologies. 
+                                                Leveraging AWS Elastic Beanstalk for seamless deployment and management, the application employs auto-scaling to handle varying loads efficiently at the lowest cost. 
+                                                Amazon CloudFront is utilized to deliver content globally with low latency through its edge locations. 
+                                                The application ensures high performance and availability by integrating Amazon DynamoDB for fast and flexible NoSQL database operations. 
+                                                This setup provides a comprehensive and scalable solution optimized for performance and reliability.
+											
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="spotlights">
+								<section>
+									<a href="#" class="image">
+										<img src="images/project8/Solution Architecture official.png" alt="" style="padding: 15px 20px 10px 20px;" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h2>Solution Architecture</h2>
+
+											</header>
+											<p>
+												More than 10,000 people are expected to participate, both in-person and online. 
+                                                This event will be broadcast over the internet and inperson. 
+                                                At some point during the event, 10 vouchers will be drawn for 3 Cloud certifications. 
+                                                The audience will register the email to guarantee participation in the raffle. 
+                                                The objective of this project is to create an application with the necessary components for the participants to successfully access the page. 
+                                                For this, we will rely on AWS. 
+                                                We are going to use Elastic Beanstalk to deploy a web application and DynamoDB to store the emails. 
+                                                Let's rely on CloudFront to cache static and dynamic files to an Edge Location close to the user. 
+                                                This application will need to be responsive for Desktop and Mobile access.
+                                            </p>
+                                            <p>
+                                                We will deploy the application in an S3 bucket and share this source path with Elastic Beanstalk. 
+                                                DynamoDB will be used to store the participant's email ID. 
+                                                Elastic Beanstalk will be set up to create 2 instances and whenever CPU utilization reaches 50% then create a new instance until it reaches the maximum limit provided. 
+                                                Similarly, decrement the number of instances when CPU utilization goes down having a limit to a minimum number of instances. 
+                                                Amazon CloudFront will be used to cache the web application in all the edge locations available for high availability and 
+                                                cloudwatch will be used to monitor and log the events.
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>	
+
+						
+
+
+						<!-- Five -->
+							<section id="five" style="padding: 15px 20px 10px 20px;">
+								
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h2>Step by step</h2>
+											</header>
+											<h4>Create and setup environment and resources</h4>
+
+											<p>
+												<img src="images/project8/1 dynamodb.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Created DynamoDB database table to store emails that gets from the application registration page input field.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+											<p>
+												<img src="images/project8/2 EBS Environment succefully launched.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Created Amazon Elastic Beanstalk(EBS) environment with following setups:
+                                                <ul>
+                                                    <li> use default VPC </li>
+                                                    <li> use the public url of S3 with application code as source code location in EBS</li>
+                                                    <li> set up to have minimum instances 2 and maximum 4, with general purpose(SSD) instance type and 10GB storage</li>
+                                                    <li> scaling must trigger respective to CPU utilization, when it reaches 50% increment 1 instance and decrement 1 when it goes down to 40%</li>
+                                                    
+                                                </ul>
+											<div style="clear:both;"></br>
+											</div>
+											<p>
+												<img src="images/project8/2.1 instances running after EBS launch.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												As soon as amazon EBS is launched we can see instances running.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+											
+											<p>
+												<img src="images/project8/3 app running.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												We can also access the application from domain url of EBS.
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+											
+											<h4>Test results and outcomes</h4>
+											<p>
+												<img src="images/project8/4 5 6 Finding error.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												We are not able to register email.
+                                                Request the log file for each instances from EBS dashboard and find the errors being logged.
+                                                Since instance is not given access to DynaamoDB this error was showing.
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+											
+											
+											<p>
+												<img src="images/project8/7 Attached DynamoDB Access to Intance profile IAM role.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Attach the DynamoDB access to the IAM role of instance profile attached to EBS.
+												
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+											<p>
+												<img src="images/project8/8 app running success registry.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Registration process is able to complete successfully now. 
+                                                This should mean that input is passed to DynamoDB successfully.
+                                             </p>   
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/9 email inserted to DynamoDB.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												To check, we can see that input text is inserted to DynamoDB table.
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/11 after creating cloudfront.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Create CloudFront to cache the web application in edge locations and allow all HTTP methods.
+                                             </p>   
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/12 monitoring of EBS regular.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Monitor the health of instances using EBS management console dashboard.
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/14 100 perc. CPU utilization stress on instance warning.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												When stress given to instance CPU utilization reaches 100% and health warning will be shown. 
+                                                Also, we can see the changes logged in events.
+                                             </p>   
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/15.3 3 instances running registered in load balancer.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												Auto scaler added one new instance under same load balancer. 
+                                                Since the instance CPU utilization reached above 50%, autoscaler was triggered to add one new instance as provided.
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/15.1 all 3 instances running.png" alt="" style="width:50%;height:50%;margin-right:15px;float:left;">
+												Currently we can see all the three instances running.
+                                             </p>   
+											<div style="clear:both;"></br>
+											</div>
+
+                                            <p>
+												<img src="images/project8/16 scale down after health ok.png" alt="" style="width:50%;height:50%;margin-left:15px;float:right;">
+												When the cpu utilization went down to 40% the instances scale down by one.	
+												
+											</p>
+											<div style="clear:both;"></br>
+											</div>
+
+
+										</div>
+									</div>
+							</section>
+
+						<!-- Conclusion -->
+							<section id="six" class="">
+								
+									<div class="inner">
+
+										<header class="major">
+											<h2>Conclusion</h2>
+										</header>
+										<p>
+											Amazon Elastic Beanstalk management console dashboard helps to monitor the events and to monitor the health of the instances. 
+                                            AWS CloudFront helps to cache the web application for quick access with low-latency and also handles the security of the website.
+
+										</br>
+										</p>
+									</div>
+								
+							</section>
+
+						<!-- Six -->
+							<section id="seven">
+								<div class="inner">
+									<header class="major">
+										<h2>References</h2>
+									</header>
+									<ul  style="list-style-type:disc;">
+										<li>AWS Elastic Beanstalk: <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html" class="alt style2">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html</a></li>
+										<li>AWS CloudFront: <a href="https://aws.amazon.com/pt/cloudfront/" class="alt style2">https://aws.amazon.com/pt/cloudfront/</a></li>
+                                        <li>Auto Scaling: <a href="https://docs.aws.amazon.com/autoscaling/plans/userguide/how-it-works.html" class="alt style2">https://docs.aws.amazon.com/autoscaling/plans/userguide/how-it-works.html</a></li>
+                                        <li>AWS Elastic Beanstalk management console: <a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-console.html" class="alt style2">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-console.html</a></li>
+									</ul>
+								</div>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/tomedisonc0785563/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/tom-edison-081502208/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; TOM</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
